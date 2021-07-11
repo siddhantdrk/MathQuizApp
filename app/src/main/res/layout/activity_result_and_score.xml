@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="32dp"
+    tools:context=".ResultAndScoreActivity">
+
+    <ImageView
+        android:id="@+id/screen_title_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/resultandscore"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/spinner_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/screen_title_img"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#e5e5e5">
+
+
+    <Spinner
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:entries="@array/resultandscore"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+        android:id="@+id/result_and_score_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/back_mb"
+        android:layout_below="@id/spinner_card"
+        android:layout_marginVertical="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_btn_bg"
+        app:backgroundTint="@null"
+        android:paddingVertical="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="40dp"
+        android:gravity="center"
+        android:text="back"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        app:iconTint="@color/colorSecondary"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

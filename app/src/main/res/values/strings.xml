@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MathQuizApp</string>
+    <string-array name="resultandscore">
+        <item>All</item>
+        <item>Most Recent</item>
+        <item>Higher Scores</item>
+    </string-array>
+</resources>
